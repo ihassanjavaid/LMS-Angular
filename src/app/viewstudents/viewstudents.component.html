@@ -1,0 +1,18 @@
+<div class="table-responsive-md">
+  <table class="table table-bordered table-striped" >
+    <thead class="thead-light">
+    <tr>
+      <td><strong>S. No.</strong></td>
+      <td><strong>Name</strong></td>
+      <td><strong>Roll. No.</strong></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let std of data; let i = index">
+      <td>{{(i+1)}}</td>
+      <td>{{std.name}}</td>
+      <td>{{std.rollno}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

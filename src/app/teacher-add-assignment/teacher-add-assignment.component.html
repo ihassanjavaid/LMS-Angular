@@ -1,0 +1,25 @@
+<div class="topnav">
+  <a class="active">Teacher - Add Assignment</a>
+  <!--<a href="admin/studentcontrol/addstudents">Add Student</a>
+  <a href="admin/studentcontrol/viewstudents">View Students</a>-->
+  <!--  <a href="admin/classcontrol">Classes</a>-->
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-style-5">
+      <form>
+        <legend><span class="number">1</span>Add an Assignment</legend>
+        <label>
+          <input [(ngModel)]="assignment.title" name="f2" placeholder="Title" type="text">
+        </label>
+        <input [(ngModel)]="assignment.question" type="text" name="f1" placeholder="Question(s)">
+
+        <input type="submit" (click)="addAssignment()" >
+      </form>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <app-teacher-view-assignments></app-teacher-view-assignments>
+  </div>
+</div>

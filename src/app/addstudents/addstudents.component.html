@@ -1,0 +1,12 @@
+
+<div class="form-style-5">
+  <form>
+      <legend><span class="number">1</span> Student Information</legend>
+    <label>
+      <input [(ngModel)]="student.name" name="studentname" placeholder="Your Name" type="text">
+    </label>
+    <input [(ngModel)]="student.rollno" type="text" name="studentroll" placeholder="Your Roll No.">
+
+    <input type="submit" (click)="addstudent()" >
+  </form>
+</div>

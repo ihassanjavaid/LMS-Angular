@@ -1,0 +1,24 @@
+<div class="topnav">
+  <a class="active">Student - View All Assignments</a>
+  <!--  <a href="admin/classcontrol">Classes</a>-->
+</div>
+
+
+<div class="table-responsive-md">
+  <table class="table table-bordered table-striped" >
+    <thead class="thead-light">
+    <tr>
+      <td><strong>S. No.</strong></td>
+      <td><strong>Title</strong></td>
+      <td><strong>Description</strong></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let assignments of data; let i = index">
+      <td>{{(i+1)}}</td>
+      <td><strong>{{assignments.title}}</strong></td>
+      <td>{{assignments.question}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

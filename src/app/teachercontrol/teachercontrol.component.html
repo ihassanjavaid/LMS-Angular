@@ -1,0 +1,23 @@
+<div class="topnav">
+  <a class="active">Admin - View All Teachers</a>
+  <!--  <a href="admin/classcontrol">Classes</a>-->
+</div>
+
+<div class="table-responsive-md">
+  <table class="table table-bordered table-striped" >
+    <thead class="thead-light">
+    <tr>
+      <td><strong>S. No.</strong></td>
+      <td><strong>Name</strong></td>
+      <td><strong>Designation</strong></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let teacher of data; let i = index">
+      <td>{{(i+1)}}</td>
+      <td>{{teacher.name}}</td>
+      <td>{{teacher.designation}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
